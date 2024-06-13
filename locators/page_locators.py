@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 
 
 class MainPageLocators:
-    PAGE_TITLE = [By.XPATH, "//div[contains(@class, 'Home_Header')]"]
     QUESTION_LOCATOR = [By.XPATH, './/div[@id="accordion__heading-{}"]']
     ANSWER_LOCATOR = [By.XPATH, '//div[@id="accordion__panel-{}"]']
     END_OF_PAGE_LOCATOR = [By.ID, "accordion__heading-7"]
@@ -31,8 +30,6 @@ class OrderPageLocators:
     ORDER_CONFIRM = [By.XPATH, "//div[text()='Хотите оформить заказ?']"]
     YES_BUTTON = [By.XPATH, ".//button[text()='Да']"]
     ORDER_COMPLETED = [By.XPATH, ".//div[text() = 'Заказ оформлен']"]
-
-
-class BasePageLocators:
     SCOOTER_BUTTON = [By.XPATH, ".//a[@href='/']"]
     YANDEX_BUTTON = [By.XPATH, ".//a[@href='//yandex.ru']"]
+    PAGE_TITLE = [By.XPATH, "//div[contains(@class, 'Home_Header')]"]
