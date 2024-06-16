@@ -1,7 +1,7 @@
 import allure
 
 from pages import order_page
-from pages.order_page import  OrderPage
+from pages.order_page import OrderPage
 
 
 class TestRedirect:
@@ -19,7 +19,6 @@ class TestRedirect:
         order_page.open_order_page()
         order_page.click_on_logo_yandex()
         order_page.switch_to_new_window()
-        # order_page.wait_for_open_dzen()
         expected_url = order_page.get_url_dzen_page()
         assert order_page.get_url_dzen_page() == expected_url, 'URL не соответствует странице Дзена'
 
